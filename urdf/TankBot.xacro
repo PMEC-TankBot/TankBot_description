@@ -1,0 +1,364 @@
+<?xml version="1.0" ?>
+<robot name="TankBot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find TankBot_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find TankBot_description)/urdf/TankBot.trans" />
+<xacro:include filename="$(find TankBot_description)/urdf/TankBot.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.017302005462584893 -0.00036911827625168964 -0.024469401199528073" rpy="0 0 0"/>
+    <mass value="1.1947089361442738"/>
+    <inertia ixx="0.008993" iyy="0.005938" izz="0.014171" ixy="0" iyz="0" ixz="-0.00015"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="roda_dentada_v2_1">
+  <inertial>
+    <origin xyz="-1.5462052341264076e-07 -0.024119269080105546 4.023200826471646e-05" rpy="0 0 0"/>
+    <mass value="0.04525596932196063"/>
+    <inertia ixx="8e-06" iyy="8e-06" izz="8e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.117325 0.102175 0.033" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_dentada_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.117325 0.102175 0.033" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_dentada_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="roda_lisa_v2__2__1">
+  <inertial>
+    <origin xyz="2.279268088156705e-08 -0.022205347741865264 6.068612393161921e-08" rpy="0 0 0"/>
+    <mass value="0.018687140925594863"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="3e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.067305 0.104175 0.069726" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.067305 0.104175 0.069726" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="roda_lisa_v2__3__1">
+  <inertial>
+    <origin xyz="2.2792680832994794e-08 -0.022205347741865264 6.068612388998584e-08" rpy="0 0 0"/>
+    <mass value="0.018687140925594863"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="3e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.022305 0.104175 0.069726" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.022305 0.104175 0.069726" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="roda_lisa_v2__4__1">
+  <inertial>
+    <origin xyz="2.2792680864219816e-08 -0.022205347741865264 6.068612388998584e-08" rpy="0 0 0"/>
+    <mass value="0.018687140925594863"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="3e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.022695 0.104175 0.069726" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.022695 0.104175 0.069726" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="roda_lisa_v2__5__1">
+  <inertial>
+    <origin xyz="2.27926808260559e-08 -0.022205347741865264 6.068612388998584e-08" rpy="0 0 0"/>
+    <mass value="0.018687140925594863"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="3e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.069695 0.104175 0.069726" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.069695 0.104175 0.069726" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="roda_lisa_v2__6__1">
+  <inertial>
+    <origin xyz="-1.5760077116955262e-07 -0.024205347741865266 -6.245004513516506e-17" rpy="0 0 0"/>
+    <mass value="0.018687140925594863"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="3e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.120175 0.102175 0.033" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__6__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.120175 0.102175 0.033" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__6__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="roda_dentada_v2__1__1">
+  <inertial>
+    <origin xyz="-1.546205233710074e-07 0.024119578321121327 -4.0232008264723396e-05" rpy="0 0 0"/>
+    <mass value="0.04525596932196063"/>
+    <inertia ixx="8e-06" iyy="8e-06" izz="8e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.117325 -0.101825 0.033" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_dentada_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.117325 -0.101825 0.033" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_dentada_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="roda_lisa_v2__1__1">
+  <inertial>
+    <origin xyz="2.2792680923200415e-08 0.022205656982880906 6.068612402876372e-08" rpy="0 0 0"/>
+    <mass value="0.018687140925594863"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="3e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.067305 -0.103825 0.069726" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.067305 -0.103825 0.069726" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="roda_lisa_v2__7__1">
+  <inertial>
+    <origin xyz="2.279268091626152e-08 0.022205656982880906 6.06861240565193e-08" rpy="0 0 0"/>
+    <mass value="0.018687140925594863"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="3e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.022305 -0.103825 0.069726" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__7__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.022305 -0.103825 0.069726" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__7__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="roda_lisa_v2__9__1">
+  <inertial>
+    <origin xyz="2.2792680878097604e-08 0.022205656982880906 6.06861240565193e-08" rpy="0 0 0"/>
+    <mass value="0.018687140925594863"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="3e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.022695 -0.103825 0.069726" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__9__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.022695 -0.103825 0.069726" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__9__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="roda_lisa_v2__8__1">
+  <inertial>
+    <origin xyz="2.2792680909322627e-08 0.022205656982880906 6.06861240565193e-08" rpy="0 0 0"/>
+    <mass value="0.018687140925594863"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="3e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.069695 -0.103825 0.069726" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__8__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.069695 -0.103825 0.069726" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__8__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="roda_lisa_v2_1">
+  <inertial>
+    <origin xyz="-1.5760077112791926e-07 0.024205656982880963 6.245004513516506e-17" rpy="0 0 0"/>
+    <mass value="0.018687140925594863"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="3e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.120175 -0.101825 0.033" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.120175 -0.101825 0.033" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolucionar 13" type="continuous">
+  <origin xyz="-0.117325 -0.102175 -0.033" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="roda_dentada_v2_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolucionar 14" type="continuous">
+  <origin xyz="-0.067305 -0.104175 -0.069726" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="roda_lisa_v2__2__1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolucionar 15" type="continuous">
+  <origin xyz="-0.022305 -0.104175 -0.069726" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="roda_lisa_v2__3__1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolucionar 16" type="continuous">
+  <origin xyz="0.022695 -0.104175 -0.069726" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="roda_lisa_v2__4__1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolucionar 17" type="continuous">
+  <origin xyz="0.069695 -0.104175 -0.069726" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="roda_lisa_v2__5__1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolucionar 18" type="continuous">
+  <origin xyz="0.120175 -0.102175 -0.033" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="roda_lisa_v2__6__1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolucionar 19" type="continuous">
+  <origin xyz="-0.117325 0.101825 -0.033" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="roda_dentada_v2__1__1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolucionar 20" type="continuous">
+  <origin xyz="-0.067305 0.103825 -0.069726" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="roda_lisa_v2__1__1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolucionar 21" type="continuous">
+  <origin xyz="-0.022305 0.103825 -0.069726" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="roda_lisa_v2__7__1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolucionar 22" type="continuous">
+  <origin xyz="0.022695 0.103825 -0.069726" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="roda_lisa_v2__9__1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolucionar 23" type="continuous">
+  <origin xyz="0.069695 0.103825 -0.069726" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="roda_lisa_v2__8__1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolucionar 24" type="continuous">
+  <origin xyz="0.120175 0.101825 -0.033" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="roda_lisa_v2_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+</robot>
