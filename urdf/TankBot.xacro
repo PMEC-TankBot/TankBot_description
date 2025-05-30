@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <robot name="TankBot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$(find TankBot_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find TankBot_description)/urdf/TankBot.trans" />
-<xacro:include filename="$(find TankBot_description)/urdf/TankBot.gazebo" />
+<xacro:include filename="$(find tankbot_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find tankbot_description)/urdf/TankBot.trans" />
+<xacro:include filename="$(find tankbot_description)/urdf/TankBot.gazebo" />
 <link name="base_link">
   <inertial>
     <origin xyz="-0.017302005462584893 -0.00036911827625168964 -0.024469401199528073" rpy="0 0 0"/>
@@ -13,14 +13,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +34,14 @@
   <visual>
     <origin xyz="0.117325 0.102175 0.033" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_dentada_v2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_dentada_v2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.117325 0.102175 0.033" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_dentada_v2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_dentada_v2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +55,14 @@
   <visual>
     <origin xyz="0.067305 0.104175 0.069726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__2__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__2__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.067305 0.104175 0.069726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__2__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__2__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +76,14 @@
   <visual>
     <origin xyz="0.022305 0.104175 0.069726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__3__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__3__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.022305 0.104175 0.069726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__3__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__3__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -97,14 +97,14 @@
   <visual>
     <origin xyz="-0.022695 0.104175 0.069726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__4__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__4__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.022695 0.104175 0.069726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__4__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__4__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -118,14 +118,14 @@
   <visual>
     <origin xyz="-0.069695 0.104175 0.069726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__5__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__5__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.069695 0.104175 0.069726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__5__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__5__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -139,14 +139,14 @@
   <visual>
     <origin xyz="-0.120175 0.102175 0.033" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__6__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__6__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.120175 0.102175 0.033" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__6__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__6__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -160,14 +160,14 @@
   <visual>
     <origin xyz="0.117325 -0.101825 0.033" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_dentada_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_dentada_v2__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.117325 -0.101825 0.033" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_dentada_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_dentada_v2__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -181,14 +181,14 @@
   <visual>
     <origin xyz="0.067305 -0.103825 0.069726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.067305 -0.103825 0.069726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -202,14 +202,14 @@
   <visual>
     <origin xyz="0.022305 -0.103825 0.069726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__7__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__7__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.022305 -0.103825 0.069726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__7__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__7__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -223,14 +223,14 @@
   <visual>
     <origin xyz="-0.022695 -0.103825 0.069726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__9__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__9__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.022695 -0.103825 0.069726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__9__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__9__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -244,14 +244,14 @@
   <visual>
     <origin xyz="-0.069695 -0.103825 0.069726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__8__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__8__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.069695 -0.103825 0.069726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2__8__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2__8__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -265,14 +265,14 @@
   <visual>
     <origin xyz="-0.120175 -0.101825 0.033" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.120175 -0.101825 0.033" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find TankBot_description)/meshes/roda_lisa_v2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find tankbot_description)/meshes/roda_lisa_v2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
